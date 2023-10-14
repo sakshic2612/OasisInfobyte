@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cupcake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo1.png" alt="Cupcake Delights">
+            </div>
+            <h1 class="site-name">Cakies</h1> <!-- Site name on the right -->
+        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Cakies</h1>
+        <p><strong>Indulge in the sweetest treats in town!</strong></p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+    <h2 class="menu-heading">Our Cupcake Menu</h2>
+    <section class="menu" id="menu">
+      
+      <div class="cupcake">
+          <img src="vanilla.jpg" alt="Cupcake 1">
+          <h3>Classic Vanilla</h3>
+          <p>Delicious vanilla cupcake with creamy frosting.</p>
+          <p class="price">Rs. 75 each</p>
+      </div>
+      <div class="cupcake">
+          <img src="ch.jpg" alt="Cupcake 2">
+          <h3>Chocolate Fudge</h3>
+          <p>Rich chocolate cupcake with fudge icing.</p>
+          <p class="price">Rs. 80 each</p>
+      </div>
+      <div class="cupcake">
+          <img src="str.jpg" alt="Cupcake 3">
+          <h3>Strawberry Bliss</h3>
+          <p>Strawberry-flavored cupcake with fresh strawberry toppings.</p>
+          <p class="price">Rs. 50 each</p>
+      </div>
+      <div class="cupcake">
+          <img src="lem.jpg" alt="Cupcake 4">
+          <h3>Lemon Zest</h3>
+          <p>Zesty lemon cupcake with lemon glaze.</p>
+          <p class="price">Rs. 120 each</p>
+      </div>
+      <div class="cupcake">
+          <img src="red.jpg" alt="Cupcake 5">
+          <h3>Red Velvet</h3>
+          <p>Velvety red cupcake with cream cheese frosting.</p>
+          <p class="price">Rs. 150 each</p>
+      </div>
+  </section>
+  
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p style="color: black; font-weight: bold;font-size: 18px;">
+        Welcome to Cupcake Delights, where we're passionate about creating the most delightful and delectable cupcakes in town. Our journey began with a love for baking and a desire to spread joy through sweet treats. With the finest ingredients and a touch of creativity, we've been serving up the tastiest cupcakes for years.</p>
+        <p style="color: black; font-weight: bold;font-size: 18px;">
+          At Cupcake Delights, we believe that every bite should be an experience. Our expert bakers take pride in crafting a wide variety of cupcakes, from classic flavors like vanilla and chocolate fudge to unique creations like our mouthwatering strawberry bliss and zesty lemon zest cupcakes.</p>
+          <p style="color: black; font-weight: bold;font-size: 18px;">
+            Whether you're celebrating a special occasion, looking for a quick pick-me-up, or simply want to satisfy your sweet cravings, we have a cupcake for every moment. Join us in this sweet journey, and we promise you won't be disappointed!</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p>Have questions or want to place an order? Reach out to us!</p>
+      <a class="contact-link" href="mailto:info@cupcakedelights.com">info@cupcakedelights.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cupcake Delights</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    window.scrollTo({
+                        behavior: 'smooth',
+                        top: targetElement.offsetTop
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

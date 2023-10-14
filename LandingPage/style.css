@@ -1,0 +1,196 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg12.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed; /* Add this line to make the background fixed */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.308); /* Add a semi-transparent background for readability */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex; /* Display the logo and links in a horizontal line */
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center; /* Align items vertically in the center */
+    padding: 1rem;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Display the links in a horizontal line */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+.hero {
+     /* Replace with your hero image URL */
+    background-size: cover;
+    color: rgba(255, 38, 172, 0.947);
+    text-align: center;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu, .about, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu h2, .about h2, .contact h2, .menu p,.menu h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Define the styles for the cupcake containers */
+.cupcake {
+    flex: 1; /* Distribute available space equally among cupcake containers */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Style the cupcake images */
+.cupcake img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the text inside the cupcake containers */
+.cupcake h3,
+.cupcake p,
+.cupcake .price {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Adjust margin for the heading */
+.menu-heading {
+    text-align: center; /* Center the text */
+    font-size: 36px; /* Adjust the font size as needed */
+    background: linear-gradient(to right, #8B0000, #800080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hide the text color to show the gradient */
+    margin: 20px 0; /* Add some margin for spacing */
+    padding: 10px; /* Add padding for better visibility */
+}
+.contact-heading {
+    font-family: Arial, sans-serif; /* Specify your desired font family */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #000; /* Set the text color */
+}
+
+/* Style the paragraph text */
+.contact-heading + p {
+    font-family: Arial, sans-serif; /* Specify your desired font family */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+}
+
+/* Style the email link */
+.contact-link {
+    font-family: Arial, sans-serif; /* Specify your desired font family */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #0074cc; /* Set the link color */
+    text-decoration: none; /* Remove the default underline for links */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Add underline on hover for the link */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Style the logo */
+.logo img {
+    width: 80px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+/* Style the site name */
+
+.site-name {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #000; /* Set the text color */
+    font-weight: bold;
+}
+
+/* Media query for screens with a width of 768px or less */
+@media (max-width: 500px) {
+    /* Adjust alignment and other styles for smaller screens */
+    .site-name {
+        text-align: left;
+    }
+}
